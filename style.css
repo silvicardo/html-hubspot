@@ -5,3 +5,51 @@
   font-family: 'Montserrat', sans-serif;
   background: grey
 }
+
+/* Container principale */
+#main-container  {
+  width: 100%;
+  height: 3000px;
+}
+
+/* Le sezioni si espandono per il 100% del
+main-container a colori alterni*/
+.section {
+  width:100%;
+}
+.section:nth-of-type(even) {
+  background: blue;
+}
+
+.section:nth-of-type(odd) {
+  background: violet;
+}
+/*SottoContainer di ogni section,
+ne replica l'altezza e ne occupa il
+60% della larghezza centrato  a colori alterni*/
+.content-area {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* ogni content-area ha una classe */
+.signInAndContacts {
+  height: 100px;
+  background: lightgrey
+}
+
+.logoAndNavbar {
+  height: 100px;
+  background: white
+}
+
+.learnMore {
+  height: 100px;
+  background: black
+}
+
+.headline {
+  height: 400px;
+  background: lightBlue
+}
