@@ -148,11 +148,37 @@ padding: 0 30px;
 .learnMore-area a {
   float:right;
   margin-top: 15px;
-
 }
 
 /* headline-Rules */
 .headline-section {
-  height: 400px;
   background-color: rgb(120, 191, 209);
+}
+.headline-area {
+  padding: 0px 10px 40px 10px;
+  /* background:orange; */
+}
+
+.headline-area:after {
+  content: '';
+  display: table;
+  clear:both;
+}
+.headline-left {
+  float:left;
+  width: 40%;
+  /* background: red; */
+}
+.headline-left *:not(.btn) {
+  padding: 40px 0px ;
+  color: white;
+}
+.headline-left .btn {
+  color: black;
+}
+
+.headline-left p:last-child {
+  width: 45%;
+  font-size: 10px;
+  padding-left: 10px;
 }
