@@ -14,10 +14,10 @@
 
 /* BUTTON */
 .btn {
-  display: inline;
+  /* display: inline; */
   padding: 10px 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* margin-left: 10px;
+  margin-right: 10px; */
   border: 1px solid orange;
   border-radius: 6px;
   text-decoration: none;
