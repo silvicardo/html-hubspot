@@ -38,7 +38,7 @@ main-container a colori alterni*/
 ne replica l'altezza e ne occupa il
 60% della larghezza centrato  a colori alterni*/
 .content-area {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -63,6 +63,7 @@ ne replica l'altezza e ne occupa il
 .languageAndContacts {
   float:left;
   text-align: left;
+  font-size: 20px;
 }
 
 .searchAndButtons {
@@ -147,7 +148,7 @@ padding: 0 30px;
 
 .learnMore-area p {
   line-height: 30px;
-  font-size: 16px;
+  font-size: 18px;
   float:left;
   width: 70%;
   color: white;
@@ -188,11 +189,11 @@ padding: 0 30px;
 }
 
 .headline-left h1 {
-  font-size: 45px;
+  font-size: 50px;
 }
 
 .headline-left p:first-of-type {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .headline-left .btn {
@@ -201,7 +202,7 @@ padding: 0 30px;
 
 .headline-left p:last-child {
   width: 45%;
-  font-size: 10px;
+  font-size: 13px;
   padding-left: 10px;
 }
 /* Features section */
@@ -228,6 +229,13 @@ concentro sul raggiungere il layout completo */
   /* border-bottom: 4px solid black; */
 }
 
+.features-head h2 {
+  font-size: 50px;
+}
+
+.features-head p {
+  font-size: 21px;
+}
 .features-head > img {
   height: 280px;
   display: block;
@@ -302,6 +310,7 @@ concentro sul raggiungere il layout completo */
   clear:both;
 }
 
+/* spartizione temporanea dei div */
 .secondary-feature {
   float:left;
   background: white;
