@@ -49,6 +49,7 @@ ne replica l'altezza e ne occupa il
 .signInAndContacts-section {
   background-color: rgb(245,248,250);
   border-bottom: 1px solid black;
+  position: fixed;
 }
 .signInAndContacts-area {
   height: 100px;
@@ -139,6 +140,7 @@ padding: 0 30px;
 
 .learnMore-area p {
   line-height: 30px;
+  font-size: 13px;
   float:left;
   width: 70%;
   color: white;
@@ -153,6 +155,7 @@ padding: 0 30px;
 /* headline-Rules */
 .headline-section {
   background-color: rgb(120, 191, 209);
+  border-bottom: 3px solid black;
 }
 .headline-area {
   padding: 0px 10px 40px 10px;
@@ -177,8 +180,41 @@ padding: 0 30px;
   color: black;
 }
 
+.headline-left p:first-of-type {
+  font-size: 15px;
+}
 .headline-left p:last-child {
   width: 45%;
   font-size: 10px;
   padding-left: 10px;
+}
+/* Features section */
+
+.features-section {
+  height: 1000px;
+  background-color: rgb(245,248,250);
+  border-bottom: 3px solid black;
+}
+
+.features-area {
+  /* background: gray; */
+  height: 100%;
+}
+
+.features-head, .main-feature {
+  width: 100%;
+  padding: 30px 0;
+  /* bordo temporaneo per fine content */
+  border-bottom: 4px solid black;
+}
+
+.features-head > img {
+  height:150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.features-head *:not(img) {
+  text-align: center;
+  padding: 15px 150px;
 }
