@@ -48,7 +48,7 @@ ne replica l'altezza e ne occupa il
 
 .signInAndContacts-section {
   background-color: rgb(245,248,250);
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid rgb(207,213,226);
   position: fixed;
 }
 .signInAndContacts-area {
@@ -82,7 +82,7 @@ ne replica l'altezza e ne occupa il
 }
 
 .languageAndContacts a:first-of-type {
-  border-right: 1px solid black
+  border-right: 2px solid rgb(207,213,226)
 }
 
 .searchAndButtons * {
@@ -163,7 +163,7 @@ padding: 0 30px;
 /* headline-Rules */
 .headline-section {
   background-color: rgb(120, 191, 209);
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid rgb(58, 70, 90);
 }
 .headline-area {
   padding: 0px 10px 40px 10px;
@@ -178,26 +178,29 @@ padding: 0 30px;
 
 .headline-left {
   float:left;
-  width: 40%;
+  width: 50%;
   /* background: red; */
 }
 
 .headline-left *:not(.btn) {
   /* padding: 40px 0px ; */
-  margin: 40px 0;
+  margin: 80px 0;
   color: white;
 }
 
 .headline-left h1 {
-  font-size: 50px;
+  font-size: 64px;
 }
 
 .headline-left p:first-of-type {
-  font-size: 18px;
+  font-size: 23px;
 }
 
 .headline-left .btn {
   color: black;
+  font-size: 25px;
+  border: none;
+  padding: 30px;
 }
 
 .headline-left p:last-child {
