@@ -529,3 +529,34 @@ height: 35px;
 .pic-cnt img {
   width:100%;
 }
+
+/* footer section */
+
+.footer-section {
+  padding: 50px 0;
+  background: rgb(55, 71, 89);
+  color: white;
+  text-transform:  capitalize;
+}
+
+.footer-links-area:after {
+content: '';
+display: table;
+clear: both;
+}
+
+.footer-links-area .links {
+  float:left;
+  width: 25%;
+}
+
+.links ul * {
+  list-style: none;
+  margin: 20px 0;
+  color: white;
+
+}
+
+.links ul li i {
+  display: inline;
+}
