@@ -170,6 +170,7 @@ padding: 0 30px;
   display: table;
   clear:both;
 }
+
 .headline-left {
   float:left;
   width: 40%;
@@ -202,7 +203,6 @@ padding: 0 30px;
 /* Features section */
 
 .features-section {
-  height: 1000px;
   background-color: rgb(245,248,250);
   border-bottom: 3px solid black;
 }
@@ -213,10 +213,9 @@ padding: 0 30px;
 }
 
 .features-head, .main-feature {
-  width: 100%;
   padding: 30px 0;
   /* bordo temporaneo per fine content */
-  border-bottom: 4px solid black;
+  /* border-bottom: 4px solid black; */
 }
 
 .features-head > img {
@@ -231,7 +230,7 @@ padding: 0 30px;
 }
 
 .main-feature {
-  background: yellow;
+  background: white;
   padding-left: 80px;
 }
 
@@ -244,18 +243,56 @@ padding: 0 30px;
 .main-feature .left-content{
   float:left;
   padding: 20px 30px;
-  background: white;
+  /* background: white; */
   text-align: center
 }
+
  .main-feature .left-content img {
   height:200px;
-  background:brown;
+  /* background:brown; */
   margin-bottom: 30px;
   display:block
 }
 
  .main-feature .right-content {
    float:right;
-   width:auto;
-   background: white;
+   width: 500px;
+   /* background: white; */
  }
+
+.main-feature .right-content *:not(ul) {
+  padding: 22px 0;
+}
+
+.main-feature .right-content ul {
+  /* background: green; */
+}
+.main-feature .right-content li {
+  margin-right: 40px;
+  display: inline;
+  list-style: none;
+}
+.main-feature .right-content i {
+  padding-right: 10px;
+}
+
+/* secondary features */
+
+.secondary-features {
+  padding: 40px 0px;
+  background: yellow
+}
+
+.secondary-features:after {
+  content: '';
+  display: table;
+  clear:both;
+}
+
+.secondary-feature {
+  float:left;
+
+  background: orange;
+  height: 400px;
+  width: 350px;
+}
