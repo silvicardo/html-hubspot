@@ -19,7 +19,7 @@ a {
 /* Container principale */
 #main-container  {
   width: 100%;
-  height: 3000px;
+
 }
 
 /* Le sezioni si espandono per il 100% del
@@ -74,11 +74,9 @@ ne replica l'altezza e ne occupa il
 
 .languageAndContacts a {
   margin-top: 35px;
+  padding: 0px 25px;
   display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
   line-height: 30px;
-  text-decoration: none;
 }
 
 .languageAndContacts a:first-of-type {
@@ -157,7 +155,7 @@ padding: 0 30px;
 
 .learnMore-area a {
   float:right;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
 /* headline-Rules */
@@ -199,8 +197,6 @@ padding: 0 30px;
 .headline-left .btn {
   color: black;
   font-size: 25px;
-  border: none;
-  padding: 30px;
 }
 
 .headline-left p:last-child {
@@ -335,9 +331,12 @@ concentro sul raggiungere il layout completo */
 }
 
 .secondary-feature img {
+  height: 200px
    /* background:brown; */
 }
-
+.secondary-feature h4 {
+  text-transform: uppercase;
+}
 .secondary-feature p {
   border-bottom: 2px solid rgb(202,208,220);
   padding-bottom: 20px;
@@ -359,4 +358,67 @@ concentro sul raggiungere il layout completo */
 
 .secondary-feature a {
   display: inline-block;
+}
+
+/* stats section */
+
+.stats-section {
+  padding: 50px 0px;
+  background: rgb(81,180,172);
+  color: white
+}
+
+.stats-area {
+  text-align: center
+}
+
+.stats-header h2 {
+  font-size: 55px;
+  padding-bottom: 50px
+}
+
+.stats-header p {
+  font-size: 40px;
+  padding-bottom: 100px;
+}
+
+.stats-body {
+  margin-bottom: 300px;
+}
+
+ .stats-row .stat:not(:first-child) {
+  border-left: 1px solid white
+}
+
+.stats-row:nth-of-type(2){
+  border-top: 1px solid white
+}
+
+.stats-row:after {
+  content:'';
+  display:table;
+  clear: both;
+}
+
+.stat {
+  float: left;
+  width: 25%;
+}
+
+.stat img {
+height: 35px;
+}
+
+.stat h2 {
+  padding: 25px 0;
+  font-size: 45px;
+}
+
+.stats-row:first-of-type p {
+ padding-bottom: 20px;
+}
+
+.stats-row:nth-of-type(2) img{
+  /* background: red; */
+  margin-top: 20px;
 }

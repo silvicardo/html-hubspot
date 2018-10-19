@@ -14,25 +14,42 @@
 
 /* BUTTON */
 .btn {
-  /* display: inline; */
-  padding: 10px 20px;
-  /* margin-left: 10px;
-  margin-right: 10px; */
-  border: 1px solid orange;
+  padding: 20px 20px;
   border-radius: 6px;
   text-decoration: none;
 }
 
+.btn-regular-bordered {
+  border: 2px solid rgb(225, 126, 94);
+  padding: 18px 18px;
+}
+
+.btn-medium {
+  padding: 20px;
+}
+
+.btn-large {
+  padding: 30px;
+}
+
+.btn-wide {
+  padding: 20px 25px;
+}
+
+.btn-wider {
+  padding: 20px 70px;
+}
+
 .btn-whiteOnOrange {
-  background: orange;
+  background: rgb(225, 126, 94);
   color: white;
 }
 
-.btn-orangeOnTransparent {
+.btn-orangeOnWhite {
   background: white;
-  color:orange
+  color:rgb(225, 126, 94)
 }
 
 .btn-text-orange {
-  color:orange;
+  color:rgb(225, 126, 94);
 }
