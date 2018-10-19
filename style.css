@@ -14,6 +14,7 @@ i {
 a {
   color: black;
   cursor: pointer;
+  text-decoration: none
 }
 
 /* Container principale */
@@ -431,13 +432,14 @@ height: 35px;
 
 /* growth section */
 
-.customers-area {
+.customers-area
+, .promote-growth-area {
   /* background: blue; */
   padding:100px 0;
-  border-bottom: 1px solid red;
+  /* border-bottom: 1px solid red; */
 }
 
-.customers-area:after {
+.customers-area:after, .promote-growth-area:after {
   content:'';
   display: table;
   clear: both;
@@ -473,9 +475,57 @@ height: 35px;
   float:left;
   width: 25%;
 }
+
 .customers-right .customers-row .customer img {
   padding: 0px 20px;
   height: 25px;
   /* background:yellow */
+}
 
+.promote-left {
+  float: left;
+  width: 45%;
+}
+
+.promote-left h2 {
+  font-size: 35px
+}
+
+.promote-left p {
+  font-size: 20px
+}
+
+.promote-left *:not(a) {
+  padding: 22px 0;
+}
+
+.promote-left a {
+  display: inline-block;
+  font-weight: bolder;
+  margin: 20px auto;
+}
+
+.promote-left p:last-child {
+  font-size: 13px;
+}
+
+.promote-pic-right {
+  float:right;
+  padding: 0px 80px;
+  margin: 0 auto;
+  /* background: red; */
+}
+
+.promote-pic-right .pic-cnt {
+  overflow: hidden;
+  width: 450px;
+  height: 450px;
+  background: rgb(225, 96, 126);
+  border: 3px solid rgb(225, 96, 126);
+  margin: 0 auto;
+  border-radius: 100%
+}
+
+.pic-cnt img {
+  width:100%;
 }
