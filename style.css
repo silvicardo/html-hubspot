@@ -50,6 +50,8 @@ ne replica l'altezza e ne occupa il
   background-color: rgb(245,248,250);
   border-bottom: 3px solid rgb(207,213,226);
   position: fixed;
+  top:0;
+  left:0
 }
 .signInAndContacts-area {
   height: 100px;
@@ -96,6 +98,10 @@ ne replica l'altezza e ne occupa il
 }
 
 /* logoAndNavbar-Rules */
+
+.logoAndNavbar-section {
+  margin-top: 100px;
+}
 
 .logoAndNavbar-area {
   height: 100px;
@@ -421,4 +427,55 @@ height: 35px;
 .stats-row:nth-of-type(2) img{
   /* background: red; */
   margin-top: 20px;
+}
+
+/* growth section */
+
+.customers-area {
+  /* background: blue; */
+  padding:100px 0;
+  border-bottom: 1px solid red;
+}
+
+.customers-area:after {
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.customers-left {
+  float:left;
+  padding: 0px 100px;
+  width: 35%;
+}
+
+.customers-left * {
+  padding-bottom: 20px;
+  /* background: yellow */
+}
+
+.customers-left h2 {
+  font-size: 45px;
+}
+
+.customers-right {
+  float:left;
+  text-align: center;
+  /* background-color: black; */
+}
+
+.customers-right .customers-row {
+  padding: 0px 100px 65px 100px;
+  text-align: center
+}
+
+.customers-right .customers-row .customer {
+  float:left;
+  width: 25%;
+}
+.customers-right .customers-row .customer img {
+  padding: 0px 20px;
+  height: 25px;
+  /* background:yellow */
+
 }
