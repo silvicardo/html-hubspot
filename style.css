@@ -3,16 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  /* background: grey */
 }
 
 i {
-  color:black;
-  padding-left: 10px;
+  color: #33475b;
+  margin-left: 10px;
 }
 
 a {
-  color: black;
+  color: #33475b;
   cursor: pointer;
   text-decoration: none
 }
@@ -20,7 +19,6 @@ a {
 /* Container principale */
 #main-container  {
   width: 100%;
-
 }
 
 /* Le sezioni si espandono per il 100% del
@@ -28,13 +26,7 @@ main-container a colori alterni*/
 .section {
   width:100%;
 }
-/* .section:nth-of-type(even) {
-  background: blue;
-}
 
-.section:nth-of-type(odd) {
-  background: violet;
-} */
 /*SottoContainer di ogni section,
 ne replica l'altezza e ne occupa il
 60% della larghezza centrato  a colori alterni*/
@@ -43,60 +35,51 @@ ne replica l'altezza e ne occupa il
   margin: 0 auto;
 }
 
-/* ogni content-area ha una classe */
-
 /* signInAndContacts-area-Rules */
 
 .signInAndContacts-section {
+  height: 100px;
   background-color: rgb(245,248,250);
   border-bottom: 3px solid rgb(207,213,226);
   position: fixed;
   top:0;
   left:0
 }
+
 .signInAndContacts-area {
-  height: 100px;
-}
-
-.languageAndContacts , .searchAndButtons{
   height: 100%;
-  width:50%
-}
-
-.languageAndContacts {
-  float:left;
-  text-align: left;
+  line-height: 100px;
   font-size: 20px;
 }
 
-.searchAndButtons {
-  float:right;
-  text-align: right;
-  /* background: yellow; */
+.languageAndContacts , .searchAndButtons{
+  float: left;
+  height: 100%;
+  width:50%;
 }
 
 .languageAndContacts a {
-  margin-top: 35px;
-  padding: 0px 25px;
-  display: inline-block;
-  line-height: 30px;
+  padding: 0 25px;
 }
 
 .languageAndContacts a:first-of-type {
   border-right: 2px solid rgb(207,213,226)
 }
 
+.searchAndButtons {
+  text-align: right;
+}
+
 .searchAndButtons * {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .searchAndButtons i {
   color: rgb(123, 187, 206);
+  font-size: 20px;
 }
 
-.searchAndButtons .btn {
-  line-height: 100px;
-}
+/*************************************************/
 
 /* logoAndNavbar-Rules */
 
@@ -109,38 +92,36 @@ ne replica l'altezza e ne occupa il
   background: white
 }
 
-.logo-area {
+.logo-area, .navOptions-area {
   float: left;
-  width:auto;
   height: 100%;
-  /* background: red; */
+}
+
+.logo-area {
+  width:30%;
 }
 
 .logo-area img {
-height: 40px;
-margin-top: 30px;
-padding: 0 30px;
+  height: 40px;
+  margin: 30px 0;
 }
 
-.navOptions-area{
-  float: right;
-  line-height: 100px;
+.navOptions-area {
   height: 100%;
-  width: auto;
-  text-align: left;
-  /* background: brown */
+  width: 70%;
+  line-height: 100px;
+  font-size: 20px;
+  text-align: right;
 }
 
 .navOptions-area a {
   padding: 0 30px;
-  color: black
 }
 
-.navOptions-area i {
-  color: black;
-}
+/*************************************************/
 
 /* learnMore-Rules */
+
 .learnMore-section {
   height: 100px;
   background-color: rgb(48, 62, 78);
@@ -148,31 +129,31 @@ padding: 0 30px;
 
 .learnMore-area {
   padding: 20px 0px;
-  text-align: left
+  font-size: 18px;
 }
 
-.learnMore-area p {
+.learnMore-left {
   line-height: 30px;
-  font-size: 18px;
-  float:left;
-  width: 70%;
+  width: 80%;
+  display:inline-block;
   color: white;
-  /* background: red; */
 }
 
 .learnMore-area a {
   float:right;
-  /* margin-top: 15px; */
+  color: #33475b;
 }
+
+/*************************************************/
 
 /* headline-Rules */
 .headline-section {
-  background-color: rgb(120, 191, 209);
+  background: linear-gradient(to top right, rgba(35,116,145,1) 0%,rgba(0,158,186,1) 50%,rgba(103,200,216,1) 100%);
   border-bottom: 5px solid rgb(58, 70, 90);
 }
+
 .headline-area {
-  padding: 0px 10px 40px 10px;
-  /* background:orange; */
+  padding: 40px 0;
 }
 
 .headline-area:after {
@@ -184,11 +165,9 @@ padding: 0 30px;
 .headline-left {
   float:left;
   width: 50%;
-  /* background: red; */
 }
 
 .headline-left *:not(.btn) {
-  /* padding: 40px 0px ; */
   margin: 80px 0;
   color: white;
 }
@@ -202,7 +181,7 @@ padding: 0 30px;
 }
 
 .headline-left .btn {
-  color: black;
+  color: #33475b;
   font-size: 25px;
 }
 
@@ -211,28 +190,22 @@ padding: 0 30px;
   font-size: 13px;
   padding-left: 10px;
 }
-/* Features section */
 
-/* c'è sicuramente un modo di raggruppare
-tutte le feature in una classe e poi
-fare le modifiche per ognuna. Per ora mi
-concentro sul raggiungere il layout completo */
+/*************************************************/
+
+/* Features section */
 
 .features-section {
   background-color: rgb(245,248,250);
-  padding-bottom: 200px;
-  /* border-bottom: 3px solid black; */
 }
 
 .features-area {
-  /* background: gray; */
   height: 100%;
 }
 
-.features-head, .main-feature {
-  padding: 30px 0;
-  /* bordo temporaneo per fine content */
-  /* border-bottom: 4px solid black; */
+.features-head {
+  padding: 50px 150px;
+  text-align: center;
 }
 
 .features-head h2 {
@@ -243,77 +216,112 @@ concentro sul raggiungere il layout completo */
   font-size: 21px;
 }
 .features-head > img {
-  height: 280px;
-  display: block;
-  margin: 0 auto;
+  height: 250px;
 }
 
 .features-head *:not(img) {
-  text-align: center;
-  padding: 15px 150px;
+  margin: 20px 0;
 }
 
-.main-feature {
+/* mainFeature and single secondaryFeature rules */
+
+.main-feature, .secondary-feature {
+  border-radius: 8px;
   background: white;
-  padding-left: 80px;
+  padding: 50px 100px;
+}
+.main-feature {
+  background: black;
 }
 
-.main-feature:after {
+.main-feature:after, .secondary-features:after {
   content: '';
   display: table;
   clear: both
 }
 
-.main-feature .left-content{
+/* main-feature only */
+
+.main-feature-left-content, .main-feature-right-content {
   float:left;
-  padding: 20px 30px;
-  /* background: white; */
-  text-align: center
+  height: 100%;
 }
 
- .main-feature .left-content img {
-  height:200px;
-  /* background:brown; */
-  margin-bottom: 30px;
-  display:block
+.main-feature-left-content {
+  width: 30%;
+  padding: 30px 30px;
+  text-align: center;
+  background:blue;
 }
 
- .main-feature .right-content {
-   float:right;
-   width: 500px;
-   /* background: white; */
+ .main-feature-left-content img {
+  height: 200px;
+  margin-bottom: 40px;
+  display: block;
+}
+
+ .main-feature-right-content {
+   width: 70%;
+   background: yellow;
  }
 
-.main-feature .right-content *:not(ul) {
-  padding: 22px 0;
+.main-feature-right-inner-content {
+  /* position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%); */
+  background: yellow;
 }
 
-.main-feature .right-content ul {
-  /* background: green; */
+.main-feature-right-inner-content *:not(ul) {
+  margin-bottom: 20px;
 }
 
-.main-feature .right-content li {
+.main-feature-right-inner-content h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.main-feature-right-inner-content span {
+  position:relative;
+  width:100%;
+  display:inline-block;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.main-feature-right-inner-content span:after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 69%;
+  height:2px;
+  background: lightgrey;
+}
+.main-feature-right-inner-content ul {
+  margin-top: 20px;
+}
+
+.main-feature-right-inner-content li {
   margin-right: 40px;
+  font-size: 22px;
   display: inline;
   list-style: none;
 }
 
-.main-feature .right-content i {
-  padding-right: 10px;
+.main-feature-right-inner-content i {
+  margin-right: 10px;
+  color: rgb(225, 126, 94)
 }
 
-/* secondary features */
+/* secondary features only */
 
 .secondary-features {
   padding: 40px 0px;
-  /* background: yellow; */
   text-align: center
-}
-
-.secondary-features:after {
-  content: '';
-  display: table;
-  clear:both;
 }
 
 /* spartizione temporanea dei div */
@@ -339,7 +347,6 @@ concentro sul raggiungere il layout completo */
 
 .secondary-feature img {
   height: 200px
-   /* background:brown; */
 }
 .secondary-feature h4 {
   text-transform: uppercase;
@@ -347,12 +354,10 @@ concentro sul raggiungere il layout completo */
 .secondary-feature p {
   border-bottom: 2px solid rgb(202,208,220);
   padding-bottom: 20px;
-  /* background:brown; */
 }
 
 .secondary-feature ul {
   text-align: left
-  /* background: green; */
 }
 
 .secondary-feature li {
@@ -360,7 +365,7 @@ concentro sul raggiungere il layout completo */
 }
 
 .secondary-feature i {
-  padding-right: 10px;
+  margin-right: 20px;
 }
 
 .secondary-feature a {
@@ -568,7 +573,7 @@ clear: both;
   padding: 0px 40px;
 }
 
-.links ul * {
+.links ul li {
   list-style: none;
   margin: 20px 0;
 }
