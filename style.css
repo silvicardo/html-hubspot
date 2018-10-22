@@ -225,13 +225,13 @@ ne replica l'altezza e ne occupa il
 
 /* mainFeature and single secondaryFeature rules */
 
-.main-feature, .secondary-feature {
+.main-feature {
   border-radius: 8px;
   background: white;
-  padding: 50px 100px;
-}
-.main-feature {
-  background: black;
+  margin: 50px 0;
+  padding: 0 100px;
+  width: 100%;
+  height:350px;
 }
 
 .main-feature:after, .secondary-features:after {
@@ -244,33 +244,30 @@ ne replica l'altezza e ne occupa il
 
 .main-feature-left-content, .main-feature-right-content {
   float:left;
-  height: 100%;
 }
 
 .main-feature-left-content {
   width: 30%;
-  padding: 30px 30px;
   text-align: center;
-  background:blue;
 }
 
  .main-feature-left-content img {
   height: 200px;
-  margin-bottom: 40px;
+  margin : 40px auto;
   display: block;
 }
 
  .main-feature-right-content {
+   position:relative;
    width: 70%;
-   background: yellow;
+   height:100%;
  }
 
 .main-feature-right-inner-content {
-  /* position: absolute;
+  position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%); */
-  background: yellow;
+  transform: translateY(-50%);
 }
 
 .main-feature-right-inner-content *:not(ul) {
@@ -299,8 +296,9 @@ ne replica l'altezza e ne occupa il
   right: 0;
   width: 69%;
   height:2px;
-  background: lightgrey;
+  background: rgb(202,208,220);
 }
+
 .main-feature-right-inner-content ul {
   margin-top: 20px;
 }
@@ -320,39 +318,49 @@ ne replica l'altezza e ne occupa il
 /* secondary features only */
 
 .secondary-features {
-  padding: 40px 0px;
+  margin: 50px 0 200px 0;
   text-align: center
+}
+
+.secondary-feature {
+  border-radius: 8px;
+  background: white;
 }
 
 /* spartizione temporanea dei div */
 .secondary-feature {
   float:left;
+  width: calc((100%/3) - (80px/3));
   background: white;
   padding: 30px 30px 80px 30px;
-  width: 30%;
 }
 
-.secondary-feature:first-of-type {
-  margin-right: 5%
-}
-
-.secondary-feature:last-of-type {
-  float:right;
+.middle-feature {
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .secondary-feature *:not(li) {
-
   margin-bottom: 20px
 }
 
 .secondary-feature img {
   height: 200px
 }
+
+.secondary-feature h3 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
 .secondary-feature h4 {
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 19px;
 }
 .secondary-feature p {
   border-bottom: 2px solid rgb(202,208,220);
+  font-size: 15px;
   padding-bottom: 20px;
 }
 
@@ -366,6 +374,7 @@ ne replica l'altezza e ne occupa il
 
 .secondary-feature i {
   margin-right: 20px;
+  color: rgb(225, 126, 94)
 }
 
 .secondary-feature a {
